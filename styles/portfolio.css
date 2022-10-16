@@ -17,10 +17,14 @@ h2 {
   padding-top: 20px;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .hero {
   text-align: center;
   background-color: var(--primary-color);
-  padding: 160px 20px;
+  padding: 150px 20px;
 }
 
 .btn-branding {
@@ -35,29 +39,56 @@ h2 {
   background-color: rgb(179, 42, 42);
 }
 
-.projects {
-  padding: 80px 0;
-  text-align: center;
+.btn-branding-outline {
+  color: white;
+  background-color: #d6998e;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background-color: #e2a89c;
 }
 
 .project-photo {
   max-width: 85%;
-  margin-bottom: 30px;
 }
 
 .project-description {
-  padding: 60px 40px 0 40px;
-  margin-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .project-title {
-  text-align: center;
   font-size: 35px;
   font-family: var(--first-font);
+  font-weight: 700;
+  margin-top: 55px;
 }
 
 .project-text {
   font-size: 17px;
   font-family: var(--second-font);
-  color: #6c757d;
+  opacity: 75%;
+  padding: 0 40px 0 40px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 45px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+  .project-title {
+    font-size: 30px;
+    margin-top: 33px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .btn-branding {
+    margin-top: 15px;
+  }
 }
