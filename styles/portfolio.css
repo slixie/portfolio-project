@@ -1,16 +1,18 @@
 :root {
   --primary-color: antiquewhite;
   --branding-color: rgb(194, 27, 27);
+  --first-font: "Playfair Display", serif;
+  --second-font: "Poppins", sans-serif;
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--first-font);
   font-size: 70px;
   font-weight: bold;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--second-font);
   font-size: 20px;
   padding-top: 20px;
 }
@@ -34,5 +36,28 @@ h2 {
 }
 
 .projects {
-  padding: 80px 20px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.project-photo {
+  max-width: 85%;
+  margin-bottom: 30px;
+}
+
+.project-description {
+  padding: 60px 40px 0 40px;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: var(--first-font);
+}
+
+.project-text {
+  font-size: 17px;
+  font-family: var(--second-font);
+  color: #6c757d;
 }
