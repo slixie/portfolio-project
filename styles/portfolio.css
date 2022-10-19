@@ -1,6 +1,6 @@
 :root {
   --primary-color: antiquewhite;
-  --branding-color: rgb(194, 27, 27);
+  --branding-color: #dd7f80;
   --first-font: "Playfair Display", serif;
   --second-font: "Poppins", sans-serif;
   --third-font: "Fuzzy Bubbles", cursive;
@@ -30,7 +30,7 @@ h3 {
 
 .hero {
   text-align: center;
-  background-image: url("/pictures/wallpaper.png");
+  background-image: url("/pictures/pink.jpg");
   background-size: cover;
   padding: 150px 20px;
 }
@@ -45,24 +45,33 @@ h3 {
 
 .btn-branding:hover {
   color: white;
-  background-color: rgb(179, 42, 42);
+  background-color: #cf7375;
 }
 
 .btn-branding-outline {
   color: white;
-  background-color: #e97e9e;
+  background-color: var(--branding-color);
   padding: 10px 15px;
   margin-top: 15px;
   font-size: 18px;
+  font-family: var(--third-font);
 }
 
 .btn-branding-outline:hover {
   color: white;
-  background-color: #d86f8f;
+  background-color: #cf7375;
 }
 
-.project-photo {
+.project-photo-l {
   max-width: 85%;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+}
+
+.project-photo-r {
+  max-width: 85%;
+  border-top-left-radius: 400px;
+  border-bottom-left-radius: 400px;
 }
 
 .project-description {
@@ -71,8 +80,8 @@ h3 {
 
 .project-title {
   font-size: 35px;
-  font-family: var(--first-font);
-  font-weight: 700;
+  font-family: var(--second-font);
+  font-weight: 500;
   margin-top: 55px;
 }
 
@@ -92,12 +101,13 @@ h3 {
 }
 
 .about-section {
-  margin-top: 90px;
+  margin-top: 80px;
   padding: 0 40px 0 90px;
 }
 
 .about-section p {
   font-size: 18px;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 900px) {
