@@ -1,6 +1,7 @@
 :root {
   --primary-color: antiquewhite;
   --branding-color: #dd7f80;
+  --regular-color: black;
   --first-font: "Playfair Display", serif;
   --second-font: "Poppins", sans-serif;
   --third-font: "Fuzzy Bubbles", cursive;
@@ -25,6 +26,35 @@ h3 {
   padding-top: 10px;
 }
 
+nav {
+  padding: 15px 20px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--regular-color);
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--branding-color);
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -33,7 +63,7 @@ h3 {
   text-align: center;
   background-image: url("/pictures/pink.jpg");
   background-size: cover;
-  padding: 160px 20px;
+  padding: 150px 20px;
 }
 
 .btn-branding {
@@ -113,13 +143,13 @@ h3 {
 .footer {
   background-image: url("/pictures/pink-footer.jpg");
   background-size: cover;
-  padding: 10px 20px 35px 20px;
-  margin-top: 30px;
+  padding: 5px 20px 15px 20px;
+  margin-top: 20px;
 }
 
 .link {
   font-size: 40px;
-  color: black;
+  color: var(--regular-color);
   text-align: center;
   padding: 40px 8px 30px 8px;
 }
