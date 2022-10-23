@@ -27,7 +27,7 @@ h3 {
 }
 
 nav {
-  padding: 15px 20px;
+  padding: 7px 20px;
 }
 
 nav ul {
@@ -63,7 +63,7 @@ nav a:hover {
   text-align: center;
   background-image: url("/pictures/pink.jpg");
   background-size: cover;
-  padding: 150px 20px;
+  padding: 140px 20px;
 }
 
 .btn-branding {
@@ -170,6 +170,15 @@ nav a:hover {
 .page-text {
   font-size: 17px;
   font-family: var(--second-font);
+}
+
+.links #open-source-code {
+  text-decoration: none;
+  color: var(--regular-color);
+}
+
+.links #open-source-code:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
